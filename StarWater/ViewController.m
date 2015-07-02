@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FiveStarImageView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    FiveStarImageView *image=[[FiveStarImageView alloc]initWithFrame:CGRectMake(40, 84, 37, 36) withColor:[UIColor whiteColor]];
+    [self.view addSubview:image];
+    
 }
 
 - (void)didReceiveMemoryWarning {
